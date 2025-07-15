@@ -4,6 +4,64 @@ body {
     padding: 0;
     background: #f9f9f9;
     color: #222;
+
+    /* 金沢駅鼓門イメージのトップ部分 */
+    .tsuzumi-header {
+        background: linear-gradient(180deg, #c68642 0%, #fff 100%);
+        color: #4b2e0e;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .tsuzumi-gate {
+        position: relative;
+        width: 180px;
+        height: 100px;
+        margin: 0 auto 1rem auto;
+    }
+
+    .tsuzumi-gate .pillar {
+        position: absolute;
+        bottom: 0;
+        width: 28px;
+        height: 80px;
+        background: #a0522d;
+        border-radius: 14px 14px 8px 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .tsuzumi-gate .pillar.left {
+        left: 0;
+    }
+
+    .tsuzumi-gate .pillar.right {
+        right: 0;
+    }
+
+    .tsuzumi-gate .roof {
+        position: absolute;
+        top: 0;
+        left: 14px;
+        width: 152px;
+        height: 24px;
+        background: #d2b48c;
+        border-radius: 12px 12px 8px 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+        z-index: 1;
+    }
+
+    .tsuzumi-header h1 {
+        font-size: 2.2rem;
+        margin: 0.5rem 0 0.5rem 0;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    .tsuzumi-header nav ul {
+        margin-top: 0.5rem;
+    }
 }
 
 header {
